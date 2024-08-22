@@ -10,11 +10,11 @@ terraform {
     bucket         = "myproject-aug21"
     region         = "us-east-1"
     key            = "eks/terraform.tfstate"
-    dynamodb_table = "Lock-Files"
+    dynamodb_table = "dynamo-terra"
     encrypt        = true
   }
 }
 
 provider "aws" {
-  region  = var.aws-region
+  region = var.aws-region
 }
