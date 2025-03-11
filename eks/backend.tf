@@ -7,10 +7,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "myproject-march11"
+    bucket         = "myproject-aug21"
     region         = "us-east-1"
     key            = "eks/terraform.tfstate"
-    dynamodb_table = "dynamo-terraform"
+    dynamodb_table = "dynamo-terra"
     encrypt        = true
   }
 }
